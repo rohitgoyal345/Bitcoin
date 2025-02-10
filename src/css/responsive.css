@@ -1,110 +1,334 @@
 
+
 @media (min-width:320px) and (max-width:576px) {
 
-    body{
-        /* overflow: hidden; */
-    }
-    
-        /* navbar section start */
-    
-    .navbar-brand img {
-        width: 180px;
-        height: 50px;
-    }
-    
-        /* banner section start */
-    
-    
+    /* banner start */
+
     .banner-contact {
-        padding: 60px 0;
+        padding: 50px 0;
+        margin-left: 10px;
     }
     .banner-heading h1 {
         font-size: 30px;
     }
     .banner-contact p {
-        font-size: 16px;
+        font-size: 17px;
     }
     .banner-img {
-        margin-top: 0;
-    }
-     
-    
-    
+        margin-top: 30px;
     }
     
-    @media (min-width:577px) and (max-width:768px) {
-    
-        /* navbar section start */
-    
-    .navbar-brand img {
-        width: 180px;
-        height: 50px;
-    }
-    
-        /* banner section start */
-    .banner-contact {
-        padding-top:70px;
-        padding-bottom:0;
-    }
-    .banner-heading h1 {
-        font-size: 40px;
-    }
-    .banner-contact p {
-        font-size: 16px;
-    }
-    .banner-img {
-        margin-top:0;
-    }
-    .banner-img img{
-        padding:50px;
-    }
-     
-    
-    
-    }
-    
-    @media (min-width:769px) and (max-width:992px) {
-    
-        /* navbar section start */
-    
-    .navbar-brand img {
-        width: 180px;
-        height: 50px;
-    }
-    
-        /* banner section start */
-    .banner-contact {
-        padding: 80px 0;
-        margin-left:0px;
-    }
-    .banner-heading h1 {
-        margin-left: 10px;
-        font-size: 37px;
-    }
-    .banner-img {
-        margin-top: 40px;
-    }
-    
-     
-        /* banner-about section start */
-    
-    .banner-about{
+    /* choose start */
+
+    .choose{
+        overflow: hidden;
         /* display:none; */
-        overflow:hidden;
-        padding-bottom:0;
     }
-    .banner-about-contact {
+    .choose-heading h1 {
+        font-size: 35px;
+    }
+    .bitcoin-card-main {
+        margin-bottom:30px;
+    }
+
+
+    /* about start */
+
+    .about{
+        overflow: hidden;
+        /* display:none; */
+    }
+
+    .about-title h1 {
+        font-size: 30px;
+    }
+    .banner-btn {
+        margin-left: 20px;
+    }
+
+
+    /* about2 start */
+
+    .about2{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .about2-title h1 {
+        font-size: 30px;
+    }
+
+
+    /* service start */
+
+    .service{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .service-heading h1 {
+        font-size: 30px;
+    }
+    .service-heading h1 {
+        font-size: 30px;
+    }
+    .service-card2{
+        margin:40px 0;
+    }
+
+    /* token start */
+
+    .token-sale{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .token-sale-heading h1 {
+        font-size: 30px;
+    }
+    .token-sale-heading p {
+        font-size: 16px;
+    }
+    .bitcoin-card2{
+        margin:40px 0;
+    }
+
+    /* team start */
+
+    .team{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .team-heading {
+        padding: 0px 0;
+        margin-bottom: 50px;
+    }
+    .team-heading h1 {
+        font-size:30px;
+    }
+    
+    .team-img2 {
         padding-top: 0px;
     }
-    .banner-about-title h2 {
-        font-size: 38px;
+    .team-img3 {
+        margin-top: 30px;
     }
-    .banner-about-img img{
-        width:100%;
+
+    /* client start */
+
+    .client{
+        overflow: hidden;
+        /* display:none; */
+        padding-bottom: 150px;
     }
-    
-     
-    
+    .client::after {
+        display: none;
     }
+    .client-heading h1 {
+        font-size: 30px;
+    }
+    .client-heading p {
+        font-size: 16px;
+    }
+    .client-card2 {
+        transform: translateY(45px);
+    }
+    .client-card3 {
+        transform: translateY(80px);
+    }
+    .client-card4 {
+        transform: translateY(115px);
+    }
+
+
+    /* app start */
+
+    .app{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .app-title h1 {
+        font-size: 30px;
+    }
+
+
+    /* blog start */
+
+    .blog{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .blog-heading h1 {
+        font-size: 30px;
+    }
+    .blog-heading p {
+        font-size: 16px;
+    }
+
+    /* help start */
+
+    .help{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .help-heading h1 {
+        font-size: 30px;
+    }
+    .help-heading p {
+        font-size: 16px;
+    }
+    .help-card-2{
+        margin:30px 0;
+    }
+
+
+    /* news start */
+
+    .news{
+        overflow: hidden;
+        /* display:none; */
+    }
+    .news-main h1 {
+        font-size: 30px;
+    }
+    .news-main p {
+        font-size: 16px;
+    }
+    .input-email {
+        margin-bottom: 30px;
+    }
+
+    /* footer start */
+
+    .footer{
+        overflow: hidden;
+        /* display:none; */
+    }
+
+}
+
+@media (min-width:577px) and (max-width:768px) {
     
-  
+   /* banner start */
+    
+   .banner-img {
+      margin-top: 0px;
+   }
+
+   /* choose start */
+
+
+    .bitcoin-card3{
+        margin-top: 30px;
+    }
+    .bitcoin-card4{
+        margin-top: 30px;
+    }
+
+    /* service start */
+
+    .service-card2{
+        margin:40px 0;
+    }
+
+
+    /* token-sale start */
+
+
+    .bitcoin-card2{
+        margin:40px 0;
+    }
+
+
+    /* client start  */
+
+    .client::after {
+        display: none;
+    }
+
+    .client-card2 {
+        transform: translateY(50px);
+    }
+    .client-card3 {
+        transform: translateY(85px);
+    }
+    .client-card4 {
+        transform: translateY(125px);
+    }
+
+
+    /* blog start */
+
+    .blog-card2{
+        margin: 30px 0;
+    }
+
+    /* help start */
+
+    .help-card-2{
+        margin: 30px 0;
+    }
+
+
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    
+        /* choose start */
+
+    .bitcoin-card3{
+        margin-top: 40px;
+    }
+    .bitcoin-card4{
+        margin-top: 40px;
+    }
+
+    /* service start */
+
+    .service-card h3 {
+        font-size: 22px;
+    }
+
+    .service-card-main-last {
+        margin-top: 0px;
+    }
+
+    .service-card3{
+        margin: 40px 0;
+    }
+    .service-card4{
+        margin: 40px 0;
+    }
+
+    /* token-sale start */
+
+    .bitcoin-sale-main3{
+        margin-top: 40px;
+    }
+
+
+    /* client start */
+
+    .client{
+        padding-bottom:0;
+    }
+
+    .client::after {
+        top: -4%;
+    }
+
+    .client-card2 {
+        transform: translateY(50px);
+    }
+    .client-card3 {
+        transform: translateY(-290px);
+    }
+    .client-card4 {
+        transform: translate(360px , -240px);
+    }
+
+
+    /* app start */
+
+    .app{
+        padding-top:0;
+    }
+        
+}
