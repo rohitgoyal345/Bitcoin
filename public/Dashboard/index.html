@@ -336,28 +336,180 @@
           </div>
 
       
+          <!-- referal link card -->
+
           <div class="col-lg-12">
             <div class="Referal-link-main">
               <div class="Referal-link-info">
                   
-                <div class="referal-link-heading">
-                  <h2></h2>
-                </div>
-                <div class="referal-link-input">
-                  <input type="text">
-                </div>
+                  <div class="row mb-4">
+                    <div class="col-lg-6">
+                      <div class="referal-link-heading">
+                        <h2>Referal link</h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">    
+                      <div class="referal-link-input">
+                        <p id="referralLink">https://crcoin.live/Dashboard/Register/?sponser_id=admin</p>
+                      </div>
+                    </div>
+                  </div>
 
                 <div class="row">
 
                   <div class="col-lg-4">
                     <div class="referal-btn-main">
                       <div class="referal-btn">
+
+                        <div class="row" id="row-referal">
+                          <div class="col-lg-4">
+                            <div class="copy-text">
+                              <h2>Copy Now</h2>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-img">
+                              <img src="../../src/image/arrow-img.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-icon">
+                              <a href="" id="copyButton" onclick="copyLink(event)"><i class='bx bx-copy-alt'></i></a>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="referal-btn-main">
+                      <div class="referal-btn">
+
+                        <div class="row" id="row-referal">
+                          <div class="col-lg-4">
+                            <div class="copy-text">
+                              <h2>Share Now</h2>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-img">
+                              <img src="../../src/image/arrow-img.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-icon">
+                              <a href=""><i class='bx bxl-whatsapp'></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="referal-btn-main">
+                      <div class="referal-btn">
+
+                        <div class="row" id="row-referal">
+                          <div class="col-lg-4">
+                            <div class="copy-text">
+                              <h2>Share Now</h2>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-img">
+                              <img src="../../src/image/arrow-img.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="btn-icon">
+                              <a href="" ><i class='bx bxl-telegram' ></i></a>
+                            </div>
+                          </div>
+                        </div>
                         
                       </div>
                     </div>
                   </div>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- team member card -->
+
+          <div class="col-lg-6">
+            <div class="team-member-card">
+              <div class="team-member">
+
+                  <div class="team-heading">
+                    <h3>Team Members</h3>
+                    <span>378</span>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-lg-6">
+                      <div class="team-btn-main">
+                        <div class="team-main">
+  
+                          <div class="row" id="row-referal">
+                            <div class="col-lg-6">
+                              <div class="team-btn">
+                                <a href="#">Direct Team</a>
+                                <p class="active-p">Active (<span> 6 </span>)</p>
+                                <p>Inactive (<span> 4 </span>)  </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="team-img">
+                                <img src="../../src/image/team-img1.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="team-btn-main">
+                        <div class="team-main">
+  
+                          <div class="row" id="row-referal">
+                            <div class="col-lg-6">
+                              <div class="team-btn">
+                                <a href="#">Downline Team</a>
+                                <p class="active-p">Active (<span> 45 </span>)</p>
+                                <p>Inactive (<span> 224 </span>)  </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="team-img">
+                                <img src="../../src/image/team-img2.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="team-star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                  </div>
 
               </div>
             </div>
@@ -416,7 +568,30 @@ iconLinks.forEach((link) => {
 
   
 
+<script>
+  function copyLink(event) {
+    // Prevent the default behavior (which would reload the page)
+    event.preventDefault();
+    
+    // Get the text field
+    var copyText = document.getElementById("referralLink").innerText;
+    
+    // Create a temporary textarea element to help with copying
+    var tempTextArea = document.createElement("textarea");
+    document.body.appendChild(tempTextArea);
+    tempTextArea.value = copyText;
+    
+    // Select and copy the text
+    tempTextArea.select();
+    document.execCommand("copy");
+    
+    // Remove the temporary textarea element
+    document.body.removeChild(tempTextArea);
 
+    // Show the alert
+    alert("Your link is copied now!");
+  }
+</script>
 
 
 
