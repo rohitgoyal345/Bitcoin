@@ -1,0 +1,436 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome To The | BiTINVEST </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- homepage.css link -->
+    <!-- <link rel="stylesheet" type="text/css" href="../src/css/style.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="../../src/css/Dashboard/styles.css">
+
+    <!-- faviicon-link -->
+    <link rel="icon" type="image/x-icon" href="../Assets/images/favicon.png">
+
+    <!-- boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+
+
+     
+    <div class="sidebar">
+    
+      <ul class="nav-links">
+
+        <li>
+          <a href="#" class="icon-a active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+
+        <li>
+            <a href="#" class="iocn-link">
+              <i class='bx bx-collection' ></i>
+              <span class="link_name">Profile</span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </a>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Profile</a></li>
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">Update Bank Details</a></li>
+            <li><a href="#">PHP & MySQL</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="iocn-link">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Activation</span>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </a>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Activation</a></li>
+            <li><a href="#">Updgrade Account</a></li>
+            <li><a href="#">Activation History</a></li>
+            <li><a href="#">Wallet Ledger</a></li>
+          </ul>
+        </li>
+
+      <li>
+        <a href="#" class="iocn-link">
+          <i class='bx bx-collection' ></i>
+          <span class="link_name">Deposit</span>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Deposit</a></li>
+          <li><a href="#">USDT Activation</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="iocn-link">
+          <i class='bx bx-collection' ></i>
+          <span class="link_name">My Team</span>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </a>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">My Team</a></li>
+          <li><a href="#">My Directs</a></li>
+          <li><a href="#">Directs Tree</a></li>
+          <li><a href="#">Level Team</a></li>
+        </ul>
+      </li>
+
+    <li>
+      <a href="#" class="iocn-link">
+        <i class='bx bx-collection' ></i>
+        <span class="link_name">Withdraw</span>
+        <i class='bx bxs-chevron-down arrow'></i>
+      </a>
+      <ul class="sub-menu">
+        <li><a class="link_name" href="#">Withdraw</a></li>
+        <li><a href="#">Withdrawal History</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="#" class="icon-a">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="link_name">Logout</span>
+      </a>
+      <ul class="sub-menu blank">
+        <li><a class="link_name" href="#">Logout</a></li>
+      </ul>
+    </li>
+
+        
+
+
+      </ul>
+    </div>
+
+
+
+
+
+  <div class="main-section">
+
+
+    <div id="header"> 
+        <div class="header">
+        
+         <!-- Navbar structure -->
+          <nav class="navbar navbar-expand-lg navbar-light w-100">
+            <a class="navbar-brand" href="#">
+              <img src="../../src/image/logo.png" alt="navbar-logo"/>
+            </a>
+            <div class="logo-details">
+              <div class="logo_name"></div>
+              <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="admin-li">
+                  <p>admin <span>( Administrator )</span></p>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../src/image/user.png" alt="">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="" class="dropdown-item">
+                        <img src="./image/profile-img.jpg" alt="user-img" />
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Dexter Smith</a></li>
+                    <li><a class="dropdown-item" href="#">Manager</a></li>
+                    <li><a href="" class="dropdown-item">Setting</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+    
+      </div>
+    </div>
+
+
+    <main class="page-content">
+        <div class="container-fulid">
+          <div class="row" id="page-content-row">
+    
+           <!-- dashboard-heading start -->
+    
+          <div class="col-lg-12 col-12 col-sm-12 col-md-12">
+              <div class="dashboard-heading">
+                <h2>Welcome To CRCOIN</h2>
+              </div>
+          </div>
+    
+           <!-- dashboard-heading end -->
+
+
+          <!-- card-section start -->
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service6.png">
+                </div>
+                <div class="card-title">
+                   <h5>Invest</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service4.png">
+                </div>
+                <div class="card-title">
+                   <h5>Total Investment</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service3.png" alt="">
+                </div>
+                <div class="card-title">
+                   <h5>Level Income</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service4.png">
+                </div>
+                <div class="card-title">
+                   <h5>ROI Income</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service6.png">
+                </div>
+                <div class="card-title">
+                   <h5>Direct Business</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service7.png">
+                </div>
+                <div class="card-title">
+                   <h5>Available Balance</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service4.png">
+                </div>
+                <div class="card-title">
+                   <h5>Directs Assets</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service1.png" alt="">
+                </div>
+                <div class="card-title">
+                   <h5>$-Wallet</h5>
+                   <p>₹ 850</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 col-sm-6 col-md-6">
+            <div class="dashboard-card-main">
+              <div class="dash-card">
+                <div class="card-icon">
+                  <img src="../../src/image/service8.png" alt="">
+                </div>
+                <div class="card-title">
+                   <h5>Total Withdrawal</h5>
+                   <p>₹ 100</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+          <div class="col-lg-12">
+            <div class="Referal-link-main">
+              <div class="Referal-link-info">
+                  
+                <div class="referal-link-heading">
+                  <h2></h2>
+                </div>
+                <div class="referal-link-input">
+                  <input type="text">
+                </div>
+
+                <div class="row">
+
+                  <div class="col-lg-4">
+                    <div class="referal-btn-main">
+                      <div class="referal-btn">
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+    
+               
+    
+          </div>
+        </div>
+      </main>
+
+
+  </div>
+
+
+
+  
+
+
+
+
+
+
+
+  <script>
+
+    // sidebar toggle button
+ 
+   let sidebar = document.querySelector(".sidebar");
+   let logoHeader = document.querySelector("#header");
+   let closeBtn = document.querySelector("#btn");
+ 
+   closeBtn.addEventListener("click", ()=>{
+     sidebar.classList.toggle("close");
+     logoHeader.classList.toggle("close");
+     menuBtnChange();
+   });
+   function menuBtnChange() {
+    if(sidebar.classList.contains("close")){
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+    }else {
+      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+    }
+   }
+ 
+   let iconLinks = document.querySelectorAll(".iocn-link");
+
+iconLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    let parentLi = e.currentTarget.parentElement; // Parent <li> element
+    parentLi.classList.toggle("showMenu");
+  });
+});
+ 
+ </script>
+
+  
+
+
+
+
+
+
+
+
+    <!-- js links -->
+
+    <!-- <script>
+
+  </script> -->
+
+    <script src="../src/js/homepage.js"></script>
+
+  </body>
+  
+</html>
